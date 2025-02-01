@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar for Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0">
+        <div class="container-fluid">
+          <!-- Site Name -->
+          <a class="navbar-brand" href="/" style="margin-left: 0;">VAAG</a>
+      
+          <!-- Toggler for smaller screens -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="/view_events">View Events</a>
+                  <a class="dropdown-item" href="/view_tickets">View Tickets</a>
+                  <a class="dropdown-item" href="/create_event">Create Event</a>
+                  <a class="dropdown-item" href="/book_ticket">Book Ticket</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/help">Help</a> <!-- Fixed link -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a> <!-- Fixed link -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>   
+
+    <!-- Main Content Area -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Welcome to the Event Registration System</h1>
+        
+        <div class="row">
+            <!-- First Card: View Events -->
+            <div class="col-md-3 mb-3">
+                <div class="card text-white bg-info">
+                    <div class="card-body">
+                        <h5 class="card-title">View Events</h5>
+                        <p class="card-text">See all available events and their details.</p>
+                        <a href="/view_events" class="btn btn-light">Go to View Events</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card: Create Event -->
+            <div class="col-md-3 mb-3">
+                <div class="card text-white bg-success">
+                    <div class="card-body">
+                        <h5 class="card-title">Create Event</h5>
+                        <p class="card-text">Create a new event for people to register for.</p>
+                        <a href="/create_event" class="btn btn-light">Go to Create Event</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card: Book Ticket -->
+            <div class="col-md-3 mb-3">
+                <div class="card text-white bg-warning">
+                    <div class="card-body">
+                        <h5 class="card-title">Book Ticket</h5>
+                        <p class="card-text">Reserve your seat for any event.</p>
+                        <a href="/book_ticket" class="btn btn-light">Go to Book Ticket</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Card: View Tickets -->
+            <div class="col-md-3 mb-3">
+                <div class="card text-white bg-danger">
+                    <div class="card-body">
+                        <h5 class="card-title">View Tickets</h5>
+                        <p class="card-text">Check the tickets you've booked.</p>
+                        <a href="/view_tickets" class="btn btn-light">Go to View Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
